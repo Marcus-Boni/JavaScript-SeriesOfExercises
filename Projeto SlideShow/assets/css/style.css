@@ -9,22 +9,23 @@
 header {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url('../images/Earth.jpg');
     background-size: cover;
 }
 .header {
-    position: fixed;
     display: flex;
-    justify-content: center;
+    position: fixed;
+    justify-content: space-around;
     align-items: center;
-    height: 5rem;
     z-index: 999;
+    min-width: 1140px;
+    padding: 1.5rem 6rem;
 }
 .header_area {
     display: flex;
-    height: 100%;
-    width: 71.25rem;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo {
     display: flex;
@@ -43,23 +44,23 @@ header {
     align-items: flex-end;
     justify-content: flex-end;
 }
-nav ul {
+.menu_area ul {
     display: flex;
     justify-content: center;
 }
-nav ul li {
+.menu_area ul li {
     list-style: none;
     padding: 10px;
     margin-left: 10px;
     font-size: 14px;
 }
-nav ul li:hover {
-    border-bottom: 2px solid #333;
+.menu_area ul li:hover {
+    border-bottom: 2px solid #666;
 }
 .active {
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #666;
 }
-nav ul li a {
+.menu_area ul li a {
     text-decoration: none;
     color: white;
 }
@@ -85,12 +86,12 @@ nav ul li a {
     height: inherit;
 }
 .slider--item:nth-child(2) {
-    background-image: url('../images/space_1.jpg');
+    background-image: url('../images/space1.jpg');
     background-size: cover;
     background-position: center;
 }
 .slider--item:nth-child(3) {
-    background-image: url('../images/space_2.jpg');
+    background-image: url('../images/space2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -155,6 +156,34 @@ nav ul li a {
 .line2.next {
     transform: rotate(-45deg);
 }
+.mobile_button {
+    display: none;
+    background-color: transparent;
+}
+.mobile_button button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+.mobile_button button img {
+    width: 40px;
+    height: 40px;
+}
+.mobile_button ul {
+    list-style: none;
+}
+.mobile_button ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.mobile_button ul li {
+    padding: 10px;
+}
+.open {
+    display: block !important;
+}
 @keyframes go {
     0% { transform: translateX(-10px);}
     50% { transform: translateX(0px);}
@@ -164,4 +193,37 @@ nav ul li a {
     0% { transform: translateX(10px);}
     50% { transform: translateX(0px);}
     100% {transform: translateX(10px);}
+}
+
+@media screen and (max-width: 950px) {
+    .banner_text_area h1 {
+        font-size: 2.25rem;
+        letter-spacing: 1.325rem;
+    }
+    .slider--control {
+        width: 30px;
+        height: 30px;
+    }
+    .menu_area {
+        display: none;
+    }
+    .mobile_button {
+        position: relative;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .mobile_button ul {
+        background-color: rgba(000, 000, 000, 0.6);
+        position: absolute;
+        top: 75%;
+        left: -100px;
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .header {
+        min-width: 680px;
+    }
 }
