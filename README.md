@@ -15,6 +15,6 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 <hr>
 <div align="center">
 <h2>
-<a href="https://marcus-projeto-slideshow.netlify.app/" target="_blank">Acesse a página</a>
+<a href="hhttps://marcus-projeto-slideshow.netlify.app/" target="_blank">Acesse a página</a>
 </h2>
 </div>
