@@ -27,3 +27,4 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 <a href="https://marcus-projeto-validadorformulario.netlify.app/" target="_blank">Acesse a página</a>
 </h2>
 </div>
+
