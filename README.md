@@ -28,3 +28,4 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 </h2>
 </div>
 
+
