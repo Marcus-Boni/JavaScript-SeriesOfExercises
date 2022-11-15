@@ -29,7 +29,7 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 </div>
 
 <hr>
-<h3 align="center">Lista de alunos</h3>
+<h3 align="center">Projeto - Lista de alunos</h3>
 <hr>
 <div align="center">
 <h2>
