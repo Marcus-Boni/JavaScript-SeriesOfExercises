@@ -52,6 +52,6 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 <hr>
 <div align="center">
 <h2>
-<a href="https://marcus-lista-de-alunos.netlify.app/" target="_blank">Acesse a página</a>
+<a href="https://marcus-projeto-todolist.netlify.app/" target="_blank">Acesse a página</a>
 </h2>
 </div>
