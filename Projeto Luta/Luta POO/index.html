@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="initialscreen">
+      <div class="initial__title">
+        <h1>Qual guerreiro você deseja escolher?</h1>
+      </div>
+      <div class="initial__warriors">
+        <div class="warrior__img">
+          <img src="assets/images/knight.gif" alt="knight" />
+          <div class="warrior__description" id="kng"></div>
+        </div>
+        <button class="kngattributes">ATTRIBUTES</button>
+        <button class="knight">KNIGHT</button>
+        <div class="warrior__img">
+          <img src="assets/images/sorcerer.gif" alt="sorcerer" />
+          <div class="warrior__description" id="src"></div>
+        </div>
+        <button class="srcattributes">ATTRIBUTES</button>
+        <button class="sorcerer">SORCERER</button>
+      </div>
+    </div>
+    <div class="fightarea">
+      <div class="fightarea__layout">
+        <div id="char">
+          <div class="lifebar">
+            <div class="bar" style="width: 10%"></div>
+          </div>
+          <strong class="name">--</strong>
+          <div>
+            <button class="attackbutton">Atacar</button>
+          </div>
+        </div>
+        <div id="monster">
+          <div class="lifebar">
+            <div class="bar" style="width: 10%"></div>
+          </div>
+          <strong class="name">--</strong>
+          <div>
+            <button class="attackbutton">Atacar</button>
+          </div>
+        </div>
+      </div>
+      <ul class="log"></ul>
+      <button class="return">Retornar</button>
+    </div>
+
+    <script src="assets/js/classes.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

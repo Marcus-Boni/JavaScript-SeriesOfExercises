@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color-scheme: dark light;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.initialscreen {
+    display: block;
+    text-align: center;
+}
+
+.initial__warriors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.warrior__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.warrior__description {
+    background-color: rgba(0, 0, 255, 0.171);
+    border: 2px solid rgb(55, 0, 255);
+    border-right: none;
+    border-radius: 5px;
+    margin-right: -50vw;
+    width: 30%;
+    position: absolute;
+    padding: 10px;
+    text-align: left;
+    right: 0%;
+    transition: all ease .3s;
+}
+
+.appear {
+    margin-right: 0;
+    opacity: 1;
+}
+
+.warrior__description h2 {
+    margin-bottom: 5px;
+}
+
+button {
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.171);
+    outline: 0;
+    padding: 10px;
+    border: 2px solid rgb(55, 0, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    transform: translateX(2px);
+    transform: translateY(2px)
+}
+
+.fightarea__layout {
+    display: flex;
+    gap: 20px;
+}
+
+.fightarea {
+    visibility: hidden;
+}
+
+#char,
+#monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.log {
+    border: 1px dotted #999;
+    overflow-y: scroll;
+    height: 200px;
+}
