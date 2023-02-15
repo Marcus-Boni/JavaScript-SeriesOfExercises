@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color-scheme: dark light;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fightarea {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.171);
+    outline: 0;
+    padding: 10px;
+    border: 2px solid rgb(55, 0, 255);
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#char,
+#monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.log {
+    border: 1px dotted #999;
+    overflow-y: scroll;
+    height: 200px;
+}
