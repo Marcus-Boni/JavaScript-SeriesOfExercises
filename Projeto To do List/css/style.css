@@ -1,102 +1,139 @@
 *,
 *::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing:inherit;
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
     letter-spacing: inherit;
 }
-html{font-size:62.5%;}
-body{
-    font-family: 'Open Sans',sans-serif;
-    letter-spacing: .2rem;   
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.2rem;
     display: flex;
 }
-body,html{
-    height:100%;
+
+body,
+html {
+    height: 100%;
 }
-body{
-	margin:0;
-	padding:0;
-    background: #2980b9 url('https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;
-	-webkit-animation: 10s linear 0s normal none infinite animate;
-	-moz-animation: 10s linear 0s normal none infinite animate;
-	-ms-animation: 10s linear 0s normal none infinite animate;
-	-o-animation: 10s linear 0s normal none infinite animate;
-	animation: 10s linear 0s normal none infinite animate;
- 
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2980b9 url("https://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png") repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
 }
- 
+
 @-webkit-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
- 
+
 @-moz-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
- 
+
 @-ms-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
- 
+
 @-o-keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
- 
+
 @keyframes animate {
-	from {background-position:0 0;}
-	to {background-position: 500px 0;}
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 500px 0;
+    }
 }
-ul,li{
+
+ul,
+li {
     list-style-type: none;
 }
-button{
-    cursor:pointer;
+
+button {
+    cursor: pointer;
 }
-ion-icon{
-    font-size:18px;
-    color:rgb(77, 77, 77);
-    
+
+ion-icon {
+    font-size: 18px;
+    color: rgb(77, 77, 77);
 }
-.todo-list__app{
-   background-color:rgb(247, 247, 247);
-   border-radius: 3px;
-   box-shadow: 2px 2px 15px rgba(77, 77, 77, .5);
-   
-   width: 80%;
-   max-width:37.5rem;
-   margin: auto;
-   
+
+.todo-list__app {
+    background-color: rgb(247, 247, 247);
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px rgba(77, 77, 77, 0.5);
+    max-width: 80rem;
+    margin: auto;
 }
-.todo-add-item__container{
-    background-color:#0D50A9;
+
+.todo-add-item__container {
+    background-color: #0d50a9;
     padding: 3rem 2rem;
     border-radius: 3px 3px 0 0;
 }
-.todo-add-item__container >.heading{
-    font-size:3rem;
+
+.todo-add-item__container>.heading {
+    font-size: 3rem;
 }
-.todo-add-item{
-    display:flex;
-    flex-direction:row;
+
+.todo-add-item {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: center;
 
-    padding:3rem 0 1rem 0;
+    padding: 3rem 0 1rem 0;
 }
+
 .inputItem {
     padding: 0 1rem;
-    outline:transparent; 
+    outline: transparent;
     flex-grow: 1;
 }
+
 .inputItem::placeholder {
-    color:#a8a8a8;
-    
+    color: #a8a8a8;
 }
+
 input[type="submit"] {
     border: none;
     background-color: rgb(241, 198, 104);
@@ -104,152 +141,173 @@ input[type="submit"] {
     margin-left: 1rem;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     background-color: rgb(245, 221, 170);
 }
-.todo-list__container{  
-    padding:2rem;  
+
+.todo-list__container {
+    padding: 2rem;
 }
+
 .todo-item {
-    display:grid;
-    grid-template-columns: 1fr minmax(20rem,auto) 1fr 1fr;
+    display: flex;
+    /*  grid-template-columns: 1fr minmax(20rem,auto) 1fr 1fr;
     grid-template-rows: auto;
-    column-gap: .8rem;
-    
-    margin:0 0 2rem;
-    padding:.8rem 2rem;
-    border-radius:3px;
-    box-shadow: 2px 2px 8px rgba(77, 77, 77, .5);
-    
-    position:relative;
+    column-gap: .8rem; */
+    gap: 16px;
+    margin: 0 0 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px rgba(77, 77, 77, 0.5);
+
+    position: relative;
 }
-.todo-item:last-child{
+
+.todo-item:last-child {
     margin-bottom: 0;
 }
-.button-check{
+
+.button-check {
     grid-column: 1/2;
 
-    align-self:center;
+    align-self: center;
     justify-self: center;
-    width:1.5rem;
-    height:1.5rem;
-    border-radius:.2rem;
-    border:2px solid #2980b9;
-    position:relative;
-    outline:transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.2rem;
+    border: 2px solid #2980b9;
+    position: relative;
+    outline: transparent;
 }
+
 .fa-check {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color:#0D50A9;
-     
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #0d50a9;
 }
-.fa-check.displayNone{
-    display:none;
+
+.fa-check.displayNone {
+    display: none;
 }
-.task-name{
-    grid-column: 2/3;
-    background-color:#f2f2f2;
-    padding:1rem;
-    font-size:1.1rem;
+
+.task-name {
+    /* grid-column: 2/3; */
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    font-size: 1.1rem;
 }
-.fa-edit{
-    grid-column: 3/4;   
+
+.fa-edit {
+    grid-column: 3/4;
 }
 
 /*Container que abre ao clicar no icon do lapis para editar tarefa*/
-.editContainer{
-    position:absolute;
+.editContainer {
+    position: absolute;
     z-index: 99999;
-    top:4rem;
-    left:2rem;
-    width:120%;
-    height:6rem;
-    background-color:#99F5E0;
-    border-radius:.4rem;
-    box-shadow: 3px 3px 15px rgba(77, 77, 77, .8);
+    top: 4rem;
+    left: 2rem;
+    width: 120%;
+    height: 6rem;
+    background-color: #99f5e0;
+    border-radius: 0.4rem;
+    box-shadow: 3px 3px 15px rgba(77, 77, 77, 0.8);
 
-    display:flex;
-    justify-content:space-evenly;
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    display:none;
+    display: none;
 }
-.editContainer .editInput{
-    background-color:transparent;
-    border:none;
-    border:2px solid #0D50A9;
-    border-radius:.2rem;
-    padding:.5rem 1rem;
+
+.editContainer .editInput {
+    background-color: transparent;
+    border: none;
+    border: 2px solid #0d50a9;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
 }
-.editContainer .editInput:focus{
-    outline:none;
+
+.editContainer .editInput:focus {
+    outline: none;
 }
+
 .editContainer .editButton,
 .editContainer .cancelButton {
-    border:none;
-    outline:transparent;
-    padding: .7rem 2rem;
-
+    border: none;
+    outline: transparent;
+    padding: 0.7rem 2rem;
 }
-.editContainer .editButton{
-    background-color: #0D50A9;
+
+.editContainer .editButton {
+    background-color: #0d50a9;
     color: seashell;
 }
-.editContainer .cancelButton{
+
+.editContainer .cancelButton {
     background-color: #c02828;
     color: seashell;
 }
+
 .editContainer .editButton:hover {
     background-color: #2980b9;
     color: seashell;
 }
-.editContainer .cancelButton:hover{
+
+.editContainer .cancelButton:hover {
     background-color: #f03f3f;
     color: seashell;
 }
 
 /*FIM ---- Container que abre ao clicar no icon do lapis para editar tarefa*/
 .fa-trash-alt {
-    grid-column:4/-1;
+    grid-column: 4/-1;
 }
+
 .fa-edit,
-.fa-trash-alt{
-    outline:none;
-    border:none;
-    background-color:transparent;
+.fa-trash-alt {
+    outline: none;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
     justify-self: center;
-    align-self:center;
-    font-size:1.5rem;
-   
-    
+    align-self: center;
+    font-size: 1.5rem;
 }
+
 .fa-edit:hover,
 .fa-trash-alt:hover {
-    transform:scale(1.2,1.2);
-     outline:none;
-    border:none;
+    transform: scale(1.2, 1.2);
+    outline: none;
+    border: none;
 }
+
 .fa-trash-alt {
     color: rgb(134, 134, 134);
 }
+
 .fa-edit {
-    color:#0D50A9;
+    color: #0d50a9;
 }
+
 .fa-edit:hover {
-    color:#1a0577;
+    color: #1a0577;
 }
+
 .fa-trash-alt:hover {
-    color:#c70039;
+    color: #c70039;
 }
+
 .fa-edit:active,
 .fa-trash-alt:active {
-    transform:scale(1,1);
-    outline:none;
-    border:none;
+    transform: scale(1, 1);
+    outline: none;
+    border: none;
 }
+
 /* RESPONSIVIDADE */
 @media screen and (max-width: 510px) {
     .editContainer {
@@ -257,45 +315,60 @@ input[type="submit"]:hover {
         left: -1rem;
     }
 }
+
 @media screen and (max-width: 420px) {
     .todo-add-item {
         transform: scale(0.8);
     }
+
     .todo-item .fas.fa-edit,
     .todo-item .fas.fa-trash-alt {
         margin-left: -50px;
     }
+
     .todo-item .fas.fa-trash-alt {
         margin-right: -35px;
     }
+
     .editContainer {
         transform: scale(0.8);
         left: -1rem;
     }
-    .editContainer input, button {
+
+    .editContainer input,
+    button {
         transform: scale(0.8);
         margin: -10px;
     }
 }
+
 @media screen and (max-width: 380px) {
+
     .todo-item .fas.fa-edit,
     .todo-item .fas.fa-trash-alt {
         margin-left: -70px;
     }
+
     .task-name {
         width: 50%;
     }
-    .editContainer input, button {
+
+    .editContainer input,
+    button {
         transform: scale(0.7);
         margin: -11px;
     }
 }
+
 @media screen and (max-width: 350px) {
+
     .todo-item .fas.fa-edit,
     .todo-item .fas.fa-trash-alt {
         margin-left: -115px;
     }
-    .editContainer input, button {
+
+    .editContainer input,
+    button {
         transform: scale(0.6);
         margin: -15px;
     }
