@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Jogo da memória</title>
+  </head>
+  <body>
+    <header>
+      <nav class="game_menu">
+        <ul>
+          <li><a href="index.html">Jogo da memória</a></li>
+          <li><a href="index.html">Decks</a><a href="index.html">Sobre</a></li>
+        </ul>
+        <div class="lines">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <aside class="game_info">
+          <h2 class="mistakes">
+            Erros
+            <span class="circle">0</span>
+          </h2>
+          <div class="game_info__buttons">
+            <button class="change_theme">Mudar tema</button><br />
+            <button class="restart">Reiniciar</button>
+          </div>
+        </aside>
+        <section class="game">
+          <div class="game__board" id="gameBoard">
+            <div class="card" data-nome="elefante">
+              <img
+                src="assets/img/elefante.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="elefante">
+              <img
+                src="assets/img/elefante.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="porco">
+              <img
+                src="assets/img/porco.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="porco">
+              <img
+                src="assets/img/porco.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="sapo">
+              <img
+                src="assets/img/sapo.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="sapo">
+              <img
+                src="assets/img/sapo.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="vaca">
+              <img
+                src="assets/img/vaca.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="vaca">
+              <img
+                src="assets/img/vaca.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="passaro">
+              <img
+                src="assets/img/passaro.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="passaro">
+              <img
+                src="assets/img/passaro.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="canguru">
+              <img
+                src="assets/img/canguru.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+            <div class="card" data-nome="canguru">
+              <img
+                src="assets/img/canguru.png"
+                alt="memory image"
+                class="front_img"
+              />
+              <img
+                src="assets/img/ponto-de-interrogacao.png"
+                alt="memory image"
+                class="back_img"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="assets/js/dados.js"></script>
+    <script src="assets/js/memory.js"></script>
+  </body>
+</html>

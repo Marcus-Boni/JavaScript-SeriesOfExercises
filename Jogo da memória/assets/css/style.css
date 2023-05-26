@@ -1,0 +1,239 @@
+:root {
+    --nav-size: 60px;
+    --orange: #E57C23;
+    --wedding: #E8AA42;
+    --vintage: #F8F1F1;
+    --navy: #025464;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color-scheme: dark light;
+    color: var(--navy);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: var(--orange);
+    color: var(--vintage);
+    padding: 5px;
+    text-align: center;
+    min-height: var(--nav-size);
+}
+
+header .game_menu {
+    display: flex;
+}
+
+header .game_menu ul {
+    list-style: none;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 10px;
+}
+
+header .game_menu ul li:nth-child(1) a {
+    font-size: 20px;
+}
+
+header .game_menu ul li:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+header .game_menu ul li:nth-child(2) a {
+    padding-left: 30px;
+}
+
+header .game_menu ul li a {
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - var(--nav-size));
+}
+
+.container .game_info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.container .game_info h2 {
+    font-size: 20px;
+    margin-top: 24px;
+    color: var(--navy);
+}
+
+.container .game_info .circle {
+    padding: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: #fff;
+    font-size: 18px;
+}
+
+.container .game_info .game_info__buttons button {
+    color: var(--navy);
+    font-weight: bold;
+    padding: 10px 20% 10px 20%;
+    border: 2px solid var(--navy);
+    border-radius: 20px;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.container .game_info .game_info__buttons .restart {
+    padding: 10px 24% 10px 24%;
+    margin-bottom: 100px;
+}
+
+.container .game_info .game_info__buttons button:hover {
+    background-color: var(--navy);
+    color: var(--vintage);
+}
+
+.container .game {
+    width: 100%;
+}
+
+.game {
+    background-color: var(--vintage);
+}
+
+.game .game__board {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+    height: 100%;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.game .game__board .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--wedding);
+}
+
+.game .game__board .card img {
+    display: block;
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+    user-select: none;
+    pointer-events: none;
+}
+
+.lines {
+    display: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.lines span {
+    width: 30px;
+    height: 3px;
+    background-color: var(--vintage);
+}
+
+.card .front_img {
+    transform: rotateY(180deg);
+}
+
+.card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.front_img,
+.back_img {
+    z-index: -1;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+@media (max-width: 1024px) {
+    .container .game_info {
+        max-width: 100%;
+    }
+
+    .container .game {
+        max-width: 100%;
+    }
+
+    .game .game__board {
+        grid-template-columns: repeat(3, minmax(180px, 1fr));
+        grid-template-rows: repeat(4, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+
+    header .game_menu ul li:nth-child(2),
+    header .game_menu ul li:nth-child(3) {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .game_info {
+        max-width: 100%;
+    }
+
+    .container .game {
+        max-width: 100%;
+    }
+
+    .game .game__board {
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+        grid-template-rows: repeat(4, minmax(129.8px, 1fr));
+    }
+
+    .mistakes {
+        margin-bottom: 20px;
+    }
+
+    .lines {
+        display: flex;
+    }
+}
