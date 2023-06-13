@@ -44,7 +44,7 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 <a href="https://marcus-lista-de-alunos.netlify.app/" target="_blank">Acesse a página</a>
 </h2>
 </div>
-
+ 
 <hr>
 <h3 align="center">Projeto - To do List
 <img align='center' src="https://user-images.githubusercontent.com/115600640/203671418-257d5d9e-f12c-49f0-8464-43139296c50f.png">
