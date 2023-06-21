@@ -56,4 +56,15 @@ A series of exercises/projects made to improve knowledge in the javascript langu
 </h2>
 </div>
 
- 
+<hr>
+<h3 align="center">Projeto - Jogo da memória
+<img align='center' src="https://github.com/Marcus-Boni/Marcus-Boni/assets/115600640/99cb5c60-f3e2-4e95-afff-c61c9bdf7811">
+</h3>
+<hr>
+<div align="center">
+<h2>
+<a href="https://marcus-projeto-jogo-da-memoria.netlify.app/" target="_blank">Acesse a página</a>
+</h2>
+</div>
+
+
